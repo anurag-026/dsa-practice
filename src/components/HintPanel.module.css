@@ -1,0 +1,68 @@
+.row {
+  margin-top: 0.65rem;
+}
+
+.toggle,
+.reveal {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 0;
+}
+
+.toggle:hover,
+.reveal:hover {
+  color: var(--accent);
+}
+
+.chevron {
+  font-size: 0.7rem;
+  width: 0.75rem;
+}
+
+.body {
+  margin-top: 0.5rem;
+}
+
+.list {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.item {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.item p {
+  margin: 0;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.index {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.done {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}

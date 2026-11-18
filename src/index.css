@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+
+:root {
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  /* Dark theme (default) */
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface-muted: #21262d;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --accent: #3fb950;
+  --accent-soft: rgba(63, 185, 80, 0.12);
+  --border: #30363d;
+  --border-strong: #484f58;
+  --code-bg: #0d1117;
+  --code-fg: #e6edf3;
+  --shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+  --glow-a: rgba(35, 134, 54, 0.18);
+  --glow-b: rgba(56, 139, 253, 0.1);
+  --easy-fg: #3fb950;
+  --easy-bg: rgba(63, 185, 80, 0.12);
+  --easy-border: rgba(63, 185, 80, 0.35);
+  --medium-fg: #d29922;
+  --medium-bg: rgba(210, 153, 34, 0.12);
+  --medium-border: rgba(210, 153, 34, 0.35);
+  --hard-fg: #f85149;
+  --hard-bg: rgba(248, 81, 73, 0.12);
+  --hard-border: rgba(248, 81, 73, 0.35);
+
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --surface-muted: #f0eee8;
+  --text: #1a1c1e;
+  --muted: #5c636a;
+  --accent: #0f6e56;
+  --accent-soft: rgba(15, 110, 86, 0.1);
+  --border: #e4e0d6;
+  --border-strong: #cfc8ba;
+  --code-bg: #1e2430;
+  --code-fg: #e8edf5;
+  --shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+  --glow-a: #dceee6;
+  --glow-b: #efe6d4;
+  --easy-fg: #1a7f4b;
+  --easy-bg: #e8f7ef;
+  --easy-border: #b7e4c7;
+  --medium-fg: #9a6700;
+  --medium-bg: #fff8e6;
+  --medium-border: #f0d78c;
+  --hard-fg: #b42318;
+  --hard-bg: #fef3f2;
+  --hard-border: #fecdca;
+  color-scheme: light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse 80% 50% at 10% -10%, var(--glow-a) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 0%, var(--glow-b) 0%, transparent 50%),
+    var(--bg);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+#root {
+  height: 100vh;
+  min-height: 100vh;
+}
+
+code {
+  font-family: ui-monospace, 'Cascadia Code', 'Segoe UI Mono', monospace;
+  font-size: 0.9em;
+  background: var(--surface-muted);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

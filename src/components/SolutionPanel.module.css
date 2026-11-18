@@ -1,0 +1,34 @@
+.row {
+  margin-top: 0.65rem;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 0;
+}
+
+.toggle:hover {
+  color: var(--accent);
+}
+
+.chevron {
+  font-size: 0.7rem;
+  width: 0.75rem;
+}
+
+.body {
+  margin-top: 0.5rem;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  color: var(--text);
+}
